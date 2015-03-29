@@ -1,3 +1,3 @@
-# TEF sidebars
+# TEF tables
 
-Preview all sidebars: [http://tef-components.github.io/sidebars/index.html](http://tef-components.github.io/sidebars/index.html)
+Preview all tables: [http://tef-components.github.io/tables/index.html](http://tef-components.github.io/tables/index.html)
