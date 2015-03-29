@@ -5,63 +5,53 @@
 @import "../../utils/less/mixins.less";
 
 .tef-table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-    border-spacing: 0px;
-    border-collapse: collapse;
-    background-color: #fff;
-    color: #6f6f6f;
-    font-size: 14px;
-    line-height: 16px;
-    .box-sizing(border-box);
-    text-align: left;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  background-color: #f6f6f6;
+  color: #333;
+  font-size: 14px;
+  line-height: 16px;
+  box-sizing: border-box;
+  text-align: left;
 
-    thead {
-        background-color: #f6f6f6;
-        border-top: 1px solid #dedede;
-        border-bottom: 1px solid #eaeaea;
-        text-transform: uppercase;
-    }
+  thead {
+    background-color: #fffdeb;
+    border: 1px solid #ccc;
+    border-left: none;
 
     th {
-        padding: 20px;
+      border-left: 1px solid #ccc;
     }
+  }
 
-    tbody tr {
-        border-bottom: 1px solid #eeeeee;
-    }
+  th {
+    padding: 7px 10px;
+    font-weight: normal;
+  }
 
-    td {
-        padding: 30px 20px;
-    }
+  tbody {
+    tr {
+      border: 1px solid #ccc;
 
-    a {
-        color: #6f6f6f;
-    }
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        background-color: #fef9e5;
+        border: 1px solid #e7d28a;
 
-    [data-icon]:before {
-        position: relative;
-        top: 2px;
-        font-size: 20px;
-        line-height: 16px;
-    }
-
-    .media-min-md({
-        &.sh-zebra {
-            thead {
-                background-color: #fff;
-                border-bottom: 2px solid #bfbfbf;
-            }
-
-            th {
-                padding: 30px 20px;
-            }
-
-            tbody tr:nth-of-type(2n+1) {
-                background-color: #eee;
-                border-bottom-color: #e1e1e1;
-            }
+        td, th {
+          border-top: 1px solid #e7d28a;
         }
-    });
+      }
+    }
+  }
+
+  td {
+    padding: 7px 10px;
+  }
+
+  a { color: #333; }
 }
