@@ -18,6 +18,9 @@
     "bower_components"
   ],
   "dependencies": {
-    "utils": "tef-components/utils"
+    "utils": "tef-components/utils",
+    "icons": "tef-components/icons",
+    "inputs": "tef-components/inputs",
+    "toolbars": "tef-components/toolbars"
   }
 }
